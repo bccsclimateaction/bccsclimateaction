@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes fadeInPage {
+    0% {
+     opacity: 0;
+     }
+    100% {
+     opacity: 1;
+     }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(test4.jpg);
+    color: azure;
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2vh;
+    color: #7fffd4 ;
+}
+
+h1 {
+    text-align: center;
+    padding: 50px;
+    font-size: 12vmin;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+h2 {
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    font-size: 10vmin;
+    padding: 5vh 0vw;
+    color: #77dd77;
+}
+
+#quote {
+    font-size: 5vh;
+    word-spacing: 2px;
+    letter-spacing: 1.2px;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    padding: 10px;
+}
+
+#quoter {
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5vh;
+    font-style: italic;
+}
+
+/* nav */
+
+li, a {
+    font-family: 'Caveat', cursive;
+    font-size: 3vmax;
+    color: azure;
+    text-decoration: none;
+}
+
+header {
+    display:flex;
+    align-items:center;
+    justify-content:left;
+    padding: 30px;
+}
+
+.navlinks {
+    list-style: none;
+}
+
+.navlinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+    color: green;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    li, a {
+        font-size: 4.5vw;
+    }
+    
+    .navlinks li {
+        padding: 0px 1vw;
+    }
+
+    header {
+        justify-content: center;
+    }
+}
+
+/* ROWS */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4vw;
+    padding-bottom: 50px;
+}
+
+.row iframe {
+    width: 25%;
+}
+
+/* more fitting */
+
+@media only screen and (max-width: 1000px) {
+    .row iframe {
+        width: 30%;
+        height: 30vw;
+    }
+}
+
+/* each vid seperate row */
+
+@media only screen and (max-width: 650px) {
+    .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row iframe {
+        width: 70%;
+        height: 40vw;
+        padding: 10px 0;
+    }
+}
+
+/* INTERVIEWS SPECIFIC */
+
+
+/* ~~ANIMATIONS~~ */
+
+.overflow-hidden {
+    overflow: hidden;
+   }
+   
+   .drop-in {
+    animation: drop-in 1s ease 200ms backwards;
+   }
+   
+   .drop-in-2 {
+    animation: drop-in 1200ms ease 500ms backwards;
+   }
+   
+   .drop-in-3 {
+    animation: drop-in 2s ease 700ms backwards;
+   }
+
+   .drop-in-4 {
+    animation: drop-in 2.5s ease 800ms backwards;
+   }
+
+   @keyframes drop-in {
+    from {
+     opacity: 0;
+     transform: translateY(-100px);
+    }
+    to {
+     opacity: 1;
+     transform: translate(0px);
+    }
+   }
+
+
+/* ABOUT US */
+
+#aboutus {
+    background-image: none;
+}
+
+.MemberDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+#Members {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MemberDiv img {
+    border-radius: 50%;
+    width: 20vw;
+}
+
+.MemberDiv p {
+    padding: 10px;
+    font-size: 2vw;
+    font-weight:600;
+    text-shadow: #ECECEF;
+}
+
+.role {
+    font-family: 'Caveat', cursive;
+}
+
+@media only screen and (max-width:650px){
+    #Members {
+        flex-direction: column;
+    }
+
+    .MemberDiv img {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .MemberDiv p {
+        font-size: 4vh;
+        text-align: center;
+    }
+}
+
+/* ARTICLE */
+
+#author {
+    font-size: 5vh;
+    word-spacing: 2px;
+    letter-spacing: 1.2px;
+    font-family: 'Caveat', cursive;
+    text-align: right;
+    padding: 10px 100px;
+}
+
+#article{
+    background-image: url(articlebg.jpg);
+    color: black;
+}
+
+#articletext p {
+    text-align: center;
+    font-size: 2.5vh;
+    padding: 30px 20vw;
+}
+
+@media only screen and (max-width: 650px) {
+
+    #articletext p {
+        padding: 30px 10vw;
+    }
+
+    #author {
+        text-align: center;
+        padding: 20px 20px;
+    }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 800,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.material-symbols-outlined:hover {
+    font-variation-settings:
+    'FILL' 1
+}
+
+span {
+    padding: 20px;
+}
