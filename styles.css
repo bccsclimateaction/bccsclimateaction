@@ -217,6 +217,7 @@ header {
 
 .role {
     font-family: 'Caveat', cursive;
+    color: #77dd77;
 }
 
 @media only screen and (max-width:650px){
