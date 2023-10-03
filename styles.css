@@ -28,6 +28,43 @@ p {
     color: #7fffd4 ;
 }
 
+#headerlogoimgdiv {
+    display: flex;
+    justify-content: right;
+}
+
+#titlelogoimgdiv {
+    display: none;
+    justify-content: center;
+}
+
+#logoimg {
+    width: 14vw;
+    margin-left: 20vw;
+}
+
+@media only screen and (max-width: 900px) {
+
+    #logoimg {
+        margin-left: 8vmin;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #headerlogoimgdiv {
+        display: none;
+    }
+
+    #titlelogoimgdiv {
+        display: flex;
+    }
+
+    #logoimg {
+        margin: 0;
+        width: 40vw;
+    }
+}
+
 h1 {
     text-align: center;
     padding: 50px;
@@ -68,6 +105,10 @@ li, a {
     text-decoration: none;
 }
 
+.headercontainer {
+    display: flex;
+}
+
 header {
     display:flex;
     align-items:center;
@@ -95,15 +136,16 @@ header {
 @media only screen and (max-width: 600px) {
     
     li, a {
-        font-size: 4.5vw;
+        font-size: 5.5vw;
     }
-    
-    .navlinks li {
-        padding: 0px 1vw;
+
+    .navlinks li, a {
+        padding: 0.5vmin;
     }
 
     header {
         justify-content: center;
+        padding: 20px 0px;
     }
 }
 
@@ -145,9 +187,6 @@ header {
         padding: 10px 0;
     }
 }
-
-/* INTERVIEWS SPECIFIC */
-
 
 /* ~~ANIMATIONS~~ */
 
