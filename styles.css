@@ -18,8 +18,15 @@ html {
 }
 
 body {
-    background-image: url(test4.jpg);
+    background-image: url(2kforest.jpg);
     color: azure;
+}
+
+@media only screen and (min-width: 1920px) {
+
+    body {
+        background-image: url(4kforest.jpg);
+    }
 }
 
 p {
