@@ -40,7 +40,8 @@ p {
 
 #logoimg {
     width: 14vw;
-    margin-left: 20vw;
+    height: 17vw;
+    margin-left: 18vw;
 }
 
 @media only screen and (max-width: 900px) {
@@ -61,7 +62,13 @@ p {
 
     #logoimg {
         margin: 0;
+        height: auto;
         width: 40vw;
+    }
+
+    header {
+        margin: 0;
+        margin-top: 15px;
     }
 }
 
@@ -89,6 +96,12 @@ h2 {
     padding: 10px;
 }
 
+@media only screen and (max-width: 900px) {
+    #quote {
+        font-size: 4vmax;
+    }
+}
+
 #quoter {
     text-align: center;
     padding: 20px;
@@ -113,7 +126,8 @@ header {
     display:flex;
     align-items:center;
     justify-content:left;
-    padding: 30px;
+    padding: 0px 30px;
+    margin-bottom: 2vw
 }
 
 .navlinks {
@@ -145,7 +159,8 @@ header {
 
     header {
         justify-content: center;
-        padding: 20px 0px;
+        padding: 20px 1vw;
+        margin: 0;
     }
 }
 
